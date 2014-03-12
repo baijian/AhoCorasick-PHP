@@ -13,7 +13,7 @@
     "homepage": "",
     "autoload": {
         "psr-4": {
-            "" : "src/"
+            "Baijian" : "src/"
         }
     },
     "require": {
