@@ -1,9 +1,7 @@
 AhoCorasick-PHP
 ===============
 
-AhoCorasick in php
-
-[![Build Status](https://travis-ci.org/baijian/AhoCorasick-PHP.png?branch=master)](https://travis-ci.org/baijian/AhoCorasick-PHP)
+[![Build Status](https://travis-ci.org/baijian/AhoCorasick-PHP.svg?branch=master)](https://travis-ci.org/baijian/AhoCorasick-PHP)
 
 ### Guide
 
