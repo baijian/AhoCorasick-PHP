@@ -1,8 +1,13 @@
 language: php
+
 php:
-- 5.3
-- 5.4
-- 5.5
+    - 5.3
+    - 5.4
+    - 5.5
+
 before_script:
-- wget --quiet http://getcomposer.org/composer.phar
-- php composer.phar install
+    - wget --quiet http://getcomposer.org/composer.phar
+    - php composer.phar install --prefer-source
+
+script:
+    - ./vendor/bin/phpunit -c t/complete.phpunit.xml || exit 1
