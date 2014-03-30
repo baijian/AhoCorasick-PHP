@@ -1,5 +1,5 @@
 <?php
-namespace Algorithm;
+namespace Baijian\Algorithm;
 class AhoCorasick {
 
     public $nodeTree;

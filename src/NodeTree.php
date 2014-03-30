@@ -1,5 +1,5 @@
 <?php
-namespace Algorithm;
+namespace Baijian\Algorithm;
 class NodeTree {
     
     public $parentId = array();
