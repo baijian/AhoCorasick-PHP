@@ -9,7 +9,7 @@ class NodeTree {
     public $failureId = array();
     public $counter;
 
-    public function __construct(){
+    public function __construct() {
         $this->counter = 0;
         $this->parentId[$this->counter] = null;
         $this->char[$this->counter] = null;
@@ -19,7 +19,7 @@ class NodeTree {
         $this->counter++;
     }
     
-    public function addNode($parentId, $c){
+    public function addNode($parentId, $c) {
         $this->parentId[$this->counter] = $parentId;
         $this->char[$this->counter] = $c;
         $this->transitions[$parentId][$c] = $this->counter;
@@ -30,7 +30,7 @@ class NodeTree {
         return $this->char[$nodeId];
     }
 
-    public function addResult($nodeId, $str){
+    public function addResult($nodeId, $str) {
         $this->results[$nodeId][] = $str;
     }
 

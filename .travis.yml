@@ -5,4 +5,4 @@ php:
 - 5.5
 before_script:
 - wget --quiet http://getcomposer.org/composer.phar
-- php composer.phar install --dev
+- php composer.phar install

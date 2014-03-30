@@ -5,12 +5,12 @@ class AhoCorasick {
     public $nodeTree;
     public $root;
 
-    public function __construct(){
+    public function __construct() {
         $this->nodeTree = new NodeTree();
         $this->root = 0;
     }
 
-    public function build_tree($keywords){
+    public function build_tree($keywords) {
         
         if (is_array($keywords)) {
             foreach($keywords as $kw){
@@ -106,7 +106,7 @@ class AhoCorasick {
         return $ret;
     }
 
-    public function replace($inputText){
+    public function replace($inputText) {
         $ret = $this->find($inputText);
         foreach ($ret as $r) {
             $before = mb_substr($inputText, 0, $r['end'] + 1 - mb_strlen($r['kw'], "UTF8"), "UTF8");
