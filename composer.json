@@ -30,5 +30,18 @@
             "type": "vcs",
             "url": "https://github.com/baijian/AhoCorasick-PHP"
         }
-    ]
+    ],
+    "config": {
+        "preferred-install": "dist"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "composer dump-autoload --optimize",
+            "php index.php"
+        ],
+        "post-update-cmd": [
+            "composer dump-autoload --optimize",
+            "php index.php"
+        ]
+    }
 }

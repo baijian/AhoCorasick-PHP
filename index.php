@@ -10,6 +10,6 @@ $keywords = array('好', 'fuck', 'hello');
 $input = 'helloworld,你好,fuck!';
 $ac = new Baijian\Algorithm\AhoCorasick();//初始化搜索树(初始化树根)
 $tree = $ac->build_tree($keywords);//建议关键词搜索树
-var_dump($tree);
+//var_dump($tree);
 $ret = $ac->replace($input);//search
-var_dump($ret);
+print_r($ret);
