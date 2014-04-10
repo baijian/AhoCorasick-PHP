@@ -1,8 +1,9 @@
 {
     "name": "baijian/ahocorasick",
-    "description": "",
+    "type": "library",
+    "description": "AhoCorasick in PHP",
     "version": "0.0.1",
-    "keywords": ["ahocorasick"],
+    "keywords": ["ahocorasick", "baijian"],
     "license": "MIT",
     "authors": [
         {
@@ -12,7 +13,7 @@
             "role": "Learner"
         }
     ],
-    "homepage": "http://joinjoy.me",
+    "homepage": "http://github.com/baijian/AhoCorasick-PHP",
     "autoload": {
         "psr-4": {
             "Baijian\\Algorithm\\" : "src/"
@@ -28,10 +29,6 @@
         {
             "type": "vcs",
             "url": "https://github.com/baijian/AhoCorasick-PHP"
-        },
-        {
-            "type": "composer",
-            "url": ""
         }
     ]
 }
